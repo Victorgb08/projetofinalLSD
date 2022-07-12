@@ -1,0 +1,11 @@
+
+State Machine - |jogodavelha|estado
+Name estado.velha estado.WS2 estado.WS1 estado.verificar2 estado.aguardar2 estado.verificar1 estado.aguardar1 estado.aguardar 
+estado.aguardar 0 0 0 0 0 0 0 0 
+estado.aguardar1 0 0 0 0 0 0 1 1 
+estado.verificar1 0 0 0 0 0 1 0 1 
+estado.aguardar2 0 0 0 0 1 0 0 1 
+estado.verificar2 0 0 0 1 0 0 0 1 
+estado.WS1 0 0 1 0 0 0 0 1 
+estado.WS2 0 1 0 0 0 0 0 1 
+estado.velha 1 0 0 0 0 0 0 1 

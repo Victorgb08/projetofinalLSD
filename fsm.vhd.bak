@@ -1,0 +1,60 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity pseudo_mux is
+port (
+RESET : in std_logic; -- reset input
+CLOCK : in std_logic; -- clock input
+S : in std_logic; -- control input
+A,B,C,D : in std_logic; -- data inputs
+Q : out std_logic -- data output
+);
+end pseudo_mux;
+
+architecture Behavior of pseudo_mux is
+TYPE State_type is (E, F, G, H);
+
+
+SIGNAL Y : State_type := E;
+begin
+process (RESET, S, CLOCK)
+begin
+if RESET = '1' then
+y <= E;
+Q <= A;
+elsif (CLOCK = '1') then
+case Y is
+when E => if S = '0' then
+Y <= E;
+Q <= A;
+else
+Y <= F;
+Q <= B;
+end if;
+when F => if S = '1' then
+Y <= F;
+Q <= B;
+else
+Y <= G;
+Q <= C;
+end if;
+when G => if S = '0' then
+Y <= G;
+Q <= C;
+else
+Y <= H;
+Q <= D;
+end if;
+when H => if S = '1' then
+Y <= H;
+Q <= D;
+else
+Y <= E;
+Q <= A;
+
+end if;
+end case;
+end if;
+end process;
+
+end Behavior;

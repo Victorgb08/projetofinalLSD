@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "wp1",
+					"strict" : false
+				},
+				{
+					"name" : "wp2",
+					"strict" : false
+				},
+				{
+					"name" : "empate",
+					"strict" : false
+				},
+				{
+					"name" : "cinco",
+					"strict" : false
+				},
+				{
+					"name" : "nove",
+					"strict" : false
+				},
+				{
+					"name" : "tres",
+					"strict" : false
+				},
+				{
+					"name" : "sete",
+					"strict" : false
+				},
+				{
+					"name" : "oito",
+					"strict" : false
+				},
+				{
+					"name" : "seis",
+					"strict" : false
+				},
+				{
+					"name" : "dois",
+					"strict" : false
+				},
+				{
+					"name" : "quatro",
+					"strict" : false
+				},
+				{
+					"name" : "um",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "b",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
